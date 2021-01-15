@@ -1,0 +1,22 @@
+.u-pcOnly {
+  display: block;
+  @include mq(sp) {
+    display: none;
+  }
+}
+.u-spOnly {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.u-hoverAlpha {
+  transition: opacity 0.2s;
+  color: $colorTextMain;
+  @include mq(pc) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

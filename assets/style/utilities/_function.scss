@@ -1,0 +1,16 @@
+// vw(pc)
+@function vw-pc($size) {
+  $rate: 100 / $sizePCDesignWidth;
+  @return $rate * $size * 1vw;
+}
+
+// vw(sp)
+@function vw-sp($size) {
+  $rate: 100 / $sizeSPDesignWidth;
+  @return $rate * $size * 1vw;
+}
+
+// z-index
+@function z($name) {
+  @return index($mapOrderZ, $name);
+}

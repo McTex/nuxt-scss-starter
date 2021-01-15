@@ -1,0 +1,12 @@
+// media query
+@mixin mq($breakpoint: md) {
+  @media #{map-get($mapBreakPoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin contentsInnerPC {
+  max-width: 1156px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
